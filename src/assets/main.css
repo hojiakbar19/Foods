@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input, button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  background: #23180d;
+}
+
+.header__nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.header__info-btn {
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+
+}
+.header__info-btn:hover {
+  background-color: #c52d2f;
+
+  border-radius: 10px;
+}
+
+.header__info {
+  display: flex;
+  column-gap: 20px; 
+}
+
+
+.foods__title{ 
+  margin: 30px 0;
+  text-align: center;
+  font-size: 45px;
+}
+
+.foods__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 30px;
+  
+}
+
+.foods__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.foods__card-img {
+  max-width: 250px;
+  width: 100%;
+}
+
+.foods__card-title {
+  text-align: center;
+  font-size: 20px;  
+  color: #000;
+}
+
+.foodSingle {
+  display: flex;
+  column-gap: 50px;
+  padding: 50px;
+  text-align: center;
+}
+.foodSingle__info-area{ 
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.foodSingle__info-img {
+  width: 500px;
+  margin-bottom: 30px;
+}
+
+.foodSingle__ingredients-title {
+  font-size: 45px;
+}
+.foodSingle__ingredients-txt {
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+}
+.foodSingle__ingredients-text {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .foodSingle {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .header__nav .container {
+    flex-direction: column;
+  }
+
+  .foodSingle__info-img {
+    width: 350px;
+    
+  }
+}
+@media (max-width: 480px) {
+  .foodSingle__info-img {
+    width: 300px;
+  }
+
+  .foodSingle__ingredients-title {
+    font-size: 30px;
+  }
+
+  .foodSingle {
+    padding: 0;
+  }
+}
+
